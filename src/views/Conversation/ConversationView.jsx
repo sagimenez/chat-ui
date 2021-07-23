@@ -8,28 +8,28 @@ import SendIcon from '@material-ui/icons/Send';
 
 var msg = '';
 
-let submitMsg = (e: React.FormEvent<HTMLFormElement>) => {
+let submitMsg = (e) => {
     e.preventDefault();
     sendMessage();
 }
 
-let submitMessage = (e : React.MouseEvent<HTMLSpanElement, MouseEvent> | React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+let submitMessage = (e) => {
     sendMessage();
 }
 
-let onChangeHandler = (e : React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+let onChangeHandler = (e) => {
     msg = e.target.value;
 }
 
 function sendMessage(){
     receiveMessage();
     msg = '';
-    (document.getElementById('chatInput')! as HTMLInputElement).value = '';
+    document.getElementById('chatInput').value = '';
 }
 
 function receiveMessage(){
-    const div: HTMLDivElement = document.createElement('div');
-    const chatWindow = document.getElementById('chatWindow')!;
+    const div = document.createElement('div');
+    const chatWindow = document.getElementById('chatWindow');
     div.innerText = msg;
     chatWindow.appendChild(div);
 
