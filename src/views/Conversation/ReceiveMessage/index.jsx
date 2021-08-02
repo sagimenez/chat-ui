@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import socketIOClient from 'socket.io-client';
-require('dontenv').config();
+require('dotenv').config();
 var socketHost = process.env.SOCKET_HOST;
 var socketPort = process.env.SOCKET_PORT;
 const endpoint = 'http://' + socketHost + ':' + socketPort;
