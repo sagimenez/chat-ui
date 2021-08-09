@@ -1,9 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 import socketIOClient from 'socket.io-client';
 require('dotenv').config();
-var socketHost = process.env.SOCKET_HOST;
-var socketPort = process.env.SOCKET_PORT;
-const endpoint = 'http://' + socketHost + ':' + socketPort;
+var socketHost = process.env.SOCKET_HOST || 'localhost';
+var socketPort = process.env.SOCKET_PORT || '3030';
+//const endpoint = 'http://' + socketHost + ':' + socketPort;
+const endpoint = 'http://localhost:3030';
 
 export function ReceiveMessage(){
     const [chats, setChats] = useState([]);
