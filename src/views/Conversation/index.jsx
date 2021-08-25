@@ -6,7 +6,8 @@ import {
 } from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 import { emitMessage} from '../../services/socketIO/socketIO';
-import { ReceiveMessage } from './ReceiveMessage';
+import { ReceiveMessage } from '../../components/ReceiveMessage';
+import './styles.scss'
 
 var msg = '';
 
@@ -30,8 +31,6 @@ function sendMessage(){
 }
 
 
-
-
 class ConversationView extends React.Component {
     render(){
         return (
@@ -39,7 +38,7 @@ class ConversationView extends React.Component {
                 <Container>
                     <form id="chatForm" onSubmit={(e) => {submitMsg(e);}} autoComplete="off">
                         <ReceiveMessage />
-                        <TextField id="chatInput" onChange={(e) =>{onChangeHandler(e)}} />
+                        <TextField fullWidth id="chatInput" onChange={(e) =>{onChangeHandler(e)}} />
                         <Link onClick={(e) => {submitMessage(e)}}>
                             <SendIcon />
                         </Link>

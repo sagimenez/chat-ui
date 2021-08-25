@@ -1,0 +1,29 @@
+:root {
+    --contacts-common-color: white;
+}
+
+.contacts-scroll {
+    background-color: rgb(33,33,33);
+}
+
+.contacts-bubble {
+    border-radius: 25px;
+}
+
+.contacts-bubble:hover {
+    background-color: rgb(44,44,44);
+}
+
+#contacts-searchbar {
+    color: var(--contacts-common-color);
+}
+
+#contacts-search-container {
+    background-color: rgb(44,44,44);
+    border-radius: 25px;
+    // height: 3em;
+}
+
+#contacts-searchicon {
+    color: white;
+}

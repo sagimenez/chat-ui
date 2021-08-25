@@ -1,0 +1,15 @@
+:root{
+    --conversation-text-color: white;
+}
+
+.conversation-window {
+    background-color: #191716 ;
+}
+
+.conversation-bubble {
+    color: var(--conversation-text-color);
+}
+
+#chatInput {
+    color: var(--conversation-text-color);
+}

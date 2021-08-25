@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ConversationView from './views/Conversation/ConversationView';
+import MainView from './views/Main';
 
 function App() {
   return (
     <div className="App">
-      <ConversationView />
+      <MainView />
     </div>
   );
 }

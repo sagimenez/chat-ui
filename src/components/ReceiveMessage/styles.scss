@@ -1,0 +1,22 @@
+.conversation-bubble {
+    color: white;
+}
+
+.conversation-bubble-receive {
+    color: #E1D89F;
+    border-radius: 25px;
+    background-color: #2D82B7;
+    display: inline-block;
+    margin-left:100%;
+    margin-top:1em;   
+}
+
+.conversation-msg-receive {
+    box-sizing: content-box;
+}
+
+
+.conversation-msg-container {
+    display:flex;
+    flex-direction: column;
+}
